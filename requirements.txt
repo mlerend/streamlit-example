@@ -4,3 +4,4 @@ streamlit
 numpy
 spacy
 google-auth
+google-auth-oauthlib
