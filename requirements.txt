@@ -2,13 +2,4 @@ altair
 pandas
 streamlit
 numpy
-scikit-learn
 spacy
-
-gcsfs
-google-cloud-storage
-mlflow
-s3fs
-
-nltk
-email
