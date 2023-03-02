@@ -17,6 +17,8 @@ from googleapiclient.errors import HttpError
 import base64
 import pandas as pd
 
+import streamlit.themes
+
 # APP SETTINGS
 ## page config
 st.set_page_config(
@@ -24,6 +26,13 @@ st.set_page_config(
     page_icon="📨",
     layout="wide",
     initial_sidebar_state="expanded",)
+
+custom_theme = streamlit.themes.get_default_theme()
+custom_theme.primary_color = "#67ff94"
+custom_theme.background_color = "#2b3d5a"
+custom_theme.secondary_background_color = "#374e75"
+custom_theme.text_color = "#ffffff"
+st.set_theme(custom_theme)
 
 ## sidebar config
 st.sidebar.title("Navigation")
